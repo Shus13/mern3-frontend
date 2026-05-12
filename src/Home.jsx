@@ -9,7 +9,6 @@ const Home = () => {
         <Link to="/">Home</Link>
         <Link to="/about" >About</Link>
         <Link to="/contact">Contact</Link>
-
     </nav> */}
 
     <Button text='Register'/>
