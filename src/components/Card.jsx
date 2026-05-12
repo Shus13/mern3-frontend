@@ -1,33 +1,36 @@
-
 const Card = () => {
   return (
     <>
-        <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-  
-  <img 
-    class="w-full h-56 object-cover"
-    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-    alt="Card Image"
-  />
-
-  <div class="p-6">
-    
-    <h2 class="text-2xl font-bold text-gray-800 mb-2">
-      Web Development
-    </h2>
-
-    <p class="text-gray-600 mb-4">
-      Learn modern web development with React, Tailwind CSS, Node.js, and MongoDB.
-    </p>
-
-    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">
-      Read More
-    </button>
-
-  </div>
-</div>
+      <div class="flex px-3 py-3">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVwwYu_Pc6LfmY-6EkP_adP82c5PYSqSI-vA&s"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 py-4">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+              #photography
+            </span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+              #travel
+            </span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              #winter
+            </span>
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
