@@ -1,29 +1,27 @@
-const Card = () => {
+const Card = (props) => {
   return (
     <>
-      <div class="flex px-3 py-3">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <div className="flex px-3 py-3">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <img
-            class="w-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVwwYu_Pc6LfmY-6EkP_adP82c5PYSqSI-vA&s"
+            className="w-full"
+            src={"http://localhost:3000/" + props.blog.image}
             alt="Sunset in the mountains"
           />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">{props.blog.title}</div>
+            <p className="text-gray-700 text-base">
+              {props.blog.description}
             </p>
           </div>
-          <div class="px-6 py-4">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+          <div className="px-6 py-4">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
               #photography
             </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
               #travel
             </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
               #winter
             </span>
           </div>
