@@ -25,7 +25,7 @@ const Home = () => {
       {
         blogs.map((blog)=>{
           return(
-            <Card blog={blog}/>
+            <Card key={blog._id} blog={blog}/>
           )
         })
       }
