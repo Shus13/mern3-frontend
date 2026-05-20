@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
 import axios from "axios"
-import { useNavigate, useParams, useSearchParams } from "react-router-dom"
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
 
 const SingleBlog = () => {
 
@@ -45,7 +45,9 @@ const SingleBlog = () => {
         </div>
         <div className="flex -mx-2 mb-4">
           <div className="w-1/2 px-2">
+          <Link to={`/edit/${blog._id}`}> 
             <button className="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Edit Blog</button>
+          </Link>
           </div>
           <div className="w-1/2 px-2">
             <button className="w-full bg-red-600 dark:bg-red-600 text-white py-2 px-4 rounded-full font-bold hover:bg-red-800 dark:hover:bg-gray-600" onClick={deleteFunction}>Delete Blog</button>
